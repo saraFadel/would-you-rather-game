@@ -34,7 +34,7 @@ function saveAnswer (authedUser, qid, answer) {
 
 export function handleSaveAnswer (qid, answer) {
   return(dispatch, getState) => {
-    const {authedUser, users} = getState()
+    const {authedUser} = getState()
 
     dispatch (showLoading())
 
@@ -53,7 +53,7 @@ export function handleSaveAnswer (qid, answer) {
 
 export function handleAddQuestion (optionOne, optionTwo) {
   return(dispatch, getState) => {
-    const {authedUser, users} = getState()
+    const {authedUser} = getState()
 
     dispatch (showLoading())
 

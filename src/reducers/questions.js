@@ -13,14 +13,14 @@ export default function questions (state= {}, action) {
         ...action.questions
       }
       case ADD_QUESTION:
-        const {question, users} = action
+        const {question} = action
         return {
             ...state,
             [question.id]: question
         }
       case SAVE_ANSWER:
         const {authedUser, qid, answer} = action
-        
+
         return {
           ...state,
           [qid]: {

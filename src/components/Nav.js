@@ -47,7 +47,7 @@ class Nav extends Component{
                   style = {{textDecoration: 'none', color: '#495D63',
                    fontWeight: 'normal'}}>
                     <img src = {users[authedUser].avatarURL}
-                    altr = 'logged user image'
+                    alt = 'logged user avatar'
                     className = 'loggedUserAvatar'/>
                     <p>{users[authedUser].name}</p>
                   </NavLink>
@@ -58,7 +58,7 @@ class Nav extends Component{
                   className = 'activ'>
 
                       <img src = 'images/logout.png'
-                      altr = 'logout'
+                      alt = 'logout'
                       className = 'loggedUserAvatar'
                       onClick = {this.logOut}/>
                   </NavLink>

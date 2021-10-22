@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
-import Question from './Question'
 
 const countScore = (usr) => {
   return (
@@ -11,7 +10,7 @@ const countScore = (usr) => {
 class LeadersBoard extends Component {
 
   render () {
-    const {loggedUser, users, leaders} = this.props
+    const {users, leaders} = this.props
     console.log(leaders)
 
     return (
@@ -42,7 +41,7 @@ class LeadersBoard extends Component {
 
 function mapStateToProps ({authedUser, users}) {
   return {
-    loggedUser: users[authedUser],
+    //loggedUser: users[authedUser],
     leaders: Object.keys(users)
       .sort((a,b) => countScore(users[b]) - countScore(users[a])),
     users

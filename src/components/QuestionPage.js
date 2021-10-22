@@ -41,7 +41,7 @@ class QuestionPage extends Component {
       }
 
     const {authedUser, user} = this.props
-    const {id, optionOne, optionTwo} = question
+    const {optionOne, optionTwo} = question
     const {name, avatarURL} = user
     console.log(avatarURL)
 
