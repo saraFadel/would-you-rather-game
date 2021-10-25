@@ -66,7 +66,7 @@ class QuestionPage extends Component {
                   {optionOne.votes
                   .filter((voter) => voter === authedUser)
                   .length !== 0 &&
-                  <img src = 'images/thumbs.png'
+                  <img src = '../images/thumbs.png'
                   alt = 'Your Vote'/>}
                 </div>
                 <div className = 'line'></div>
@@ -76,7 +76,7 @@ class QuestionPage extends Component {
                   {optionTwo.votes
                   .filter((voter) => voter === authedUser)
                   .length !== 0 &&
-                  <img src = 'images/thumbs.png'
+                  <img src = '../images/thumbs.png'
                   alt = 'Your Vote'/>}
                 </div>
               </div>
